@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<head>
+<title>Ancy's Resume</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+
+<style type="text/css">
+*{
+	font-family: "microsoft yahei";
+}
+@font-face{
+	font-family: 'fontNameRegular';
+	src:url('Verdana.ttf') format('truetype'),
+		url('TektonPro-Bold.otf');
+}
+a{color:#333333;text-decoration:none;}
+
+.left_side,.right_side{
+	background-color: #49AF9E;
+	padding: 50px 40px;
+	height: 1046px;
+	
+}
+.right_side{
+	background-color: #D4D1CD;
+}
+.avatar{
+	margin: 0 auto;		
+	text-align: center;
+}
+#avatar_img{
+	width: 100px;
+	height: 100px;
+	border-radius:100px;
+}
+.brief{
+
+
+}
+#name{
+	font: 25px "Times New Roman" ;
+	margin: 20px 0px 10px 0px;
+	text-align: center;
+}
+#intension{
+	font: 20px "Times New Roman" ;
+	text-align: center;
+}
+
+.ability_process{
+	/*border: solid 1px;*/
+	width: 100%;
+	margin-top: 40px;
+}
+.progress {
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: #3D9E8D;	
+    /*background-color: #f5f5f5;*/
+
+}
+
+.skill{
+	font-family: "microsoft yahei";
+	font-weight: bold;
+
+}
+.progress-bar{
+	color: #3D9E8D;
+	font-size: 15px;
+	line-height: 25px;
+}
+.progress-bar-success{
+	background-color: #f5f5f5;
+	margin:0.3% 0%;
+}
+
+#blank_part{
+	width: 100%;
+	height: 100px;
+	border: solid 1px;
+}
+
+#hobbies{
+	width: 100%;
+	height: 100px;
+	border: solid 1px;
+	margin-bottom: 150px;
+}
+#contact_info{
+	width: 100%;
+	height: 100px;
+	margin: 40px 0px 0px 0px;
+	border: solid 1px;
+	/*font-size: 17px;*/
+	font-weight: bold;
+	font-family: "microsoft yahei";
+}
+.contact_info_class{
+	margin-left: 20px;
+}
+
+.right_side{
+	background-color: #F3F3F3;
+	height: 1046px;
+}
+.right_side h1{
+	color:#49AF9E;
+	margin-bottom: 20px;
+}
+.right_side .item2{
+	margin-bottom: 40px;
+}
+.part_justify td{
+	background-color: #F3F3F3;
+	font-weight: bold;
+}
+.f-letter:first-letter{
+	font-size:50px;
+}
+.ex_ability{
+	padding:0px;
+	margin:5px 5px 10px 0px;
+	/*display: inline;*/
+}
+.ex_ability li{
+	/*float:left;*/
+	/*display: inline-block;*/
+	display: inline-block;
+	margin-right: 15px;
+	padding:2px 5px;
+	list-style: none;
+	background-color: #49AF9E;
+	border-radius:10px;
+	color: #F5F5F5;
+	font-weight: bold;
+}
+
+.debug{
+	background-color: red;
+}
+</style>
+</head>
+
+
+<body>
+	<div id="wrapper" class="container">
+		<!-- left part -->
+		<div class="left_side col-md-4">
+			<div class="avatar">
+				<img id="avatar_img" src="avatar_white.jpg">
+			</div>
+			<div class="brief">
+				<div id="name">Ancy Huang</div>
+				<div id="intension"> Web Font-end Engineer</div>
+			</div>
+			<div class="ability_process">
+				<div class="skill">Html</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success  active" style="width: 80%; color-background:red;">
+						<div class="progress-value">80%</div>
+					</div>
+				</div>
+				<div class="skill">Css</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success  active" style="width: 75%;">
+						<div class="progress-value">75%</div>
+					</div>
+				</div>
+				<div class="skill">Javascript</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success  active" style="width: 90%;">
+						<div class="progress-value">90%</div>
+					</div>
+				</div>
+				<div class="skill">JQuery</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success p active" style="width: 60%;">
+						<div class="progress-value">60%</div>
+					</div>
+				</div>
+				<div class="skill">Boottrap</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success p active" style="width: 60%;">
+						<div class="progress-value">60%</div>
+					</div>
+				</div>
+			</div>
+			<div id="blank_part"></div>
+			<div id="hobbies"></div>
+			<div id="contact_info">
+				<div>
+					<span ><i class="fa fa-mobile fa-fw"></i></span>
+					<span class="contact_info_class"> 18801435954 </a></span>
+				</div>
+				<div>
+					<span ><i class="fa fa-github fa-fw"></i></span>
+					<span class="contact_info_class"> <a href="https://github.com/ancyhuang"> github.com/ancyhuang </a></span>
+				</div>				
+				<div>
+					<span ><i class="fa fa-envelope-o fa-fw"></i></span>
+					<span class="contact_info_class"> ancyhuang@qq.com </span>
+				</div>
+			</div>
+
+		</div>
+		<!-- right part -->
+		<div class="right_side col-md-8">
+			<div id="Education" class="item2">
+				<h1 class="f-letter">EDUCATION</h1>
+				<table id="my_education" class="part_justify" border="1">
+					<thead>
+						<tr></tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2013.09-2016.06</td>
+							<td>大连理工大学</td>				
+							<td>电子信息与电气工程学部</td>
+							<td>控制理论与控制工程</td>
+							<td>硕士</td>
+						</tr>
+						<tr>
+							<td>2009.09-2013.06</td>
+							<td>西南大学</td>				
+							<td>计算机与信息科学学院</td>
+							<td>自动化</td>
+							<td>学士</td>
+						</tr>
+					</tbody>					
+				</table>
+			</div>
+			<div id="project_info" class="item2">
+				<h1 class="f-letter">PROJECT</h1>
+				<div>
+				<h3>Copy Baidu Homepage</h3>
+				</div>
+			</div>
+			<div id="work_experience" class="item2">
+				<h1 class="f-letter">WORK EXPERIENCE</h1>
+				<table id="my_project" class="part_justify" width="100%" border="1">
+					<thead>
+						<tr></tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>2016.07–至今</th>
+							<th>金雅拓（北京）智能卡科技有限公司</th>				
+							<th>驱动工程师</th>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>模块维护：温度控制模块、电压控制模块的优化和BUG Fix任务；</li>
+									<li>模块测试系统的改进：利用shell和python脚本等在windows和Linux下实现测试自动化；</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>2013.12-2014.01</th>
+							<th>四川深泰微波有限公司</th>				
+							<th>技术研发员</th>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<ul>
+									<li>根据客户需求，进行芯片的选型、开发板设计、编程，控制器的硬件和软件设计全部独立完成；</li>
+									<li>作为第一发明人申请了国家发明专利 《I/O口模拟SPI接口的迷你嵌入式控制器装置和方法》；</li>
+								</ul>
+							</td>
+						</tr>						
+					</tbody>					
+				</table>				
+			</div>
+			<div id="intergrating_skill" class="item2">
+				<h1 class="f-letter">INTERGRATING SKILL</h1>
+				<!-- <div class="debug">前端相关 -->
+				<ul class="ex_ability">
+					<li>Html</li><li>css</li><li>javascript</li><li>jQuery</li><li>Boottrap</li><li>Vue</li>
+				</ul>
+				<!-- </div> -->
+				<!-- <div>编程能力 -->
+				<ul class="ex_ability">
+					<li>精通C</li><li>基础java/C++</li><li>基础python</li><li>shell</li>
+				</ul>
+				<!-- </div> -->
+				<!-- <div>工具 -->
+				<ul class="ex_ability">	
+					<li>Ubuntu</li><li>Vim</li>
+				</ul>
+				<!-- 	</div> -->
+
+			</div>
+		</div>
+	</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $('#my_education').DataTable();
+	    $('#my_project').DataTable();
+	    // $('#my_education').css("background-color","#F3F3F3");
+	});
+</script>
+
+</body>
+
+</html>
