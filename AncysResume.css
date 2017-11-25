@@ -116,6 +116,16 @@ p{font-size: 18px; font-weight: bold;}
 	font-size: 18px;
 	/*color:red;*/
 }
+#my_education th{
+	padding-bottom:10px;
+}
+.part_justify th:nth-child(1){
+	padding-top: 10px;
+
+}
+#work_experience>h1{
+	margin-bottom:10px;
+}
 .part_justify td{
 	background-color: #F3F3F3;
 	font-weight: bold;
